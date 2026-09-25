@@ -1,6 +1,6 @@
 # Режиссёр эфира для голосового ИИ
 
-[![tests](https://github.com/Doomsday058/realtime-voice-director/actions/workflows/tests.yml/badge.svg)](https://github.com/Doomsday058/realtime-voice-director/actions/workflows/tests.yml)
+[![tests](https://github.com/doomsdayoff/realtime-voice-director/actions/workflows/tests.yml/badge.svg)](https://github.com/doomsdayoff/realtime-voice-director/actions/workflows/tests.yml)
 
 У меня на стриме работает голосовой ИИ-соведущий. Он комментирует игру, зачитывает
 донаты и чат, разговаривает с пати. Это несколько независимых LLM-слоёв на одну
