@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="266" viewBox="0 0 900 266" role="img" aria-labelledby="title desc">
+  <title id="title">Режиссёр эфира голосового ИИ</title>
+  <desc id="desc">Схема решения, когда голосовому ИИ-соведущему говорить: событие в игре, речь стримера, запрос разрешения, повторная проверка перед звуком, журнал решения. Ниже – данные двух живых эфиров.</desc>
+  <style>
+    .m{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace}
+    .label{font-size:11px;letter-spacing:1px;font-weight:700}
+    .tiny{font-size:10px}
+    .sm{font-size:12px}
+    .pulse{animation:blink 2s ease-in-out infinite}
+    @keyframes blink{50%{opacity:.25}}
+    @media(prefers-reduced-motion:reduce){.pulse{animation:none}}
+  </style>
+  <rect x="1" y="1" width="898" height="264" rx="8" fill="#0d1117" stroke="#303b49"/>
+  <rect x="1" y="1" width="898" height="36" rx="8" fill="#151c25"/>
+  <path d="M1 37H899" stroke="#303b49"/>
+  <circle cx="20" cy="19" r="4" fill="#f77668"/><circle cx="34" cy="19" r="4" fill="#e3b341"/><circle cx="48" cy="19" r="4" fill="#3fb950"/>
+  <text x="66" y="23" class="m sm" fill="#a8bdd4">voice-director / эфир</text>
+  <circle class="pulse" cx="813" cy="19" r="4" fill="#f77668"/>
+  <text x="826" y="23" class="m label" fill="#f38b80">LIVE</text>
+
+  <text x="27" y="59" class="m label" fill="#63d3df">КОГДА ГОВОРИТЬ?</text>
+  <text x="455" y="59" text-anchor="end" class="m tiny" fill="#6f8298">условный фрагмент эфира</text>
+  <text x="515" y="59" class="m label" fill="#a98bef">РЕЖИССЁР</text>
+
+  <rect x="20" y="70" width="445" height="137" rx="7" fill="#101720" stroke="#283b4b"/>
+  <path d="M106 95H442M106 133H442M106 172H442" stroke="#2e3c4c"/>
+  <text x="32" y="99" class="m tiny" fill="#8ba0b5">ИГРА</text>
+  <text x="32" y="137" class="m tiny" fill="#8ba0b5">СТРИМЕР</text>
+  <text x="32" y="176" class="m tiny" fill="#8ba0b5">БОТ</text>
+
+  <clipPath id="reveal">
+    <rect x="106" y="70" width="0" height="137">
+      <animate attributeName="width" dur="7.5s" repeatCount="indefinite" keyTimes="0;0.8000;1" values="0;336;336"/>
+    </rect>
+  </clipPath>
+  <g clip-path="url(#reveal)">
+  <path d="M175 95V108" stroke="#d49c56" stroke-width="2"/>
+  <circle cx="175" cy="95" r="5" fill="#e3b341"/>
+  <text x="144" y="84" class="m tiny" fill="#efc978">ЭЙС</text>
+  <rect x="112" y="122" width="139" height="20" rx="4" fill="#5c4551" stroke="#b67582"/>
+  <path d="M119 133h5m4-5v10m5-14v18m5-11v5m5-10v14m5-17v20m5-14v8m5-5h5m5-8v16m5-11v6m5-13v18m5-8v4m5-12v16m5-4h5m5-11v14m5-7h5m5-13v20m5-10h5m5-7h5m5-10v16m5-7h5" stroke="#e1a2aa" stroke-width="2"/>
+  <text x="271" y="137" class="m tiny" fill="#889cb1">пауза</text>
+
+  <rect x="180" y="160" width="111" height="22" rx="4" fill="#211b32" stroke="#7454aa" stroke-dasharray="4 3"/>
+  <text x="189" y="175" class="m tiny" fill="#bb9bed">генерация</text>
+  <path d="M175 100V158" stroke="#a782e8" stroke-dasharray="3 3"/>
+  <text x="177" y="155" class="m tiny" fill="#ad93da">request</text>
+  <path d="M306 142V160" stroke="#57d6ad" stroke-dasharray="3 3"/>
+  <text x="315" y="156" class="m tiny" fill="#73dcb3">commit</text>
+  <rect x="306" y="160" width="131" height="22" rx="4" fill="#123126" stroke="#3caa73"/>
+  <path d="M318 171h4m5-5v10m5-14v18m5-10h4m5-8v18m5-12v6m5-14v20m5-8h4m5-13v18m5-7h4m5-15v22m5-8h4m5-11v14m5-7h4m5-12v16m5-6h4m5-9v13m5-6h4m5-13v17m5-6h4" stroke="#6de0a2" stroke-width="2"/>
+  </g>
+  <line x1="106" y1="76" x2="106" y2="188" stroke="#63d3df" stroke-width="1.2" opacity="0.7">
+    <animate attributeName="x1" dur="7.5s" repeatCount="indefinite" keyTimes="0;0.8000;1" values="106;442;442"/>
+    <animate attributeName="x2" dur="7.5s" repeatCount="indefinite" keyTimes="0;0.8000;1" values="106;442;442"/>
+  </line>
+  <text x="30" y="199" class="m tiny" fill="#71879d">первый звук – только после повторной проверки</text>
+
+  <rect x="485" y="70" width="394" height="137" rx="7" fill="#15141f" stroke="#514063"/>
+  <rect x="495" y="84" width="374" height="22" rx="4" fill="#2a2140" opacity="0">
+    <animate attributeName="opacity" dur="7.5s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.1643" values="0;1"/>
+  </rect>
+  <rect x="495" y="114" width="374" height="22" rx="4" fill="#2a2140" opacity="0">
+    <animate attributeName="opacity" dur="7.5s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.4762" values="0;1"/>
+  </rect>
+  <rect x="495" y="145" width="374" height="22" rx="4" fill="#2a2140" opacity="0">
+    <animate attributeName="opacity" dur="7.5s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.7881" values="0;1"/>
+  </rect>
+  <text x="504" y="96" class="m sm" fill="#b99bea">01  request()</text>
+  <text x="675" y="96" class="m sm" fill="#e1deeb">резерв слова</text>
+  <path d="M503 105H861" stroke="#332b43"/>
+  <text x="504" y="126" class="m sm" fill="#b99bea">02  commit()</text>
+  <text x="675" y="126" class="m sm" fill="#e1deeb">момент ещё жив?</text>
+  <path d="M503 136H861" stroke="#332b43"/>
+  <text x="504" y="157" class="m sm" fill="#b99bea">03  close()</text>
+  <text x="675" y="157" class="m sm" fill="#e1deeb">журнал решения</text>
+  <rect x="502" y="174" width="359" height="22" rx="4" fill="#211b2e"/>
+  <text x="514" y="189" class="m tiny" fill="#ad9dc8">бюджет речи  /  VAD  /  срок годности</text>
+
+  <path d="M20 221H880" stroke="#2d3847"/>
+  <text x="27" y="244" class="m tiny" fill="#8ba0b5">ЖИВЫЕ ЭФИРЫ 09.09 → 12.09</text>
+  <text x="296" y="246" class="m" font-size="18" font-weight="700" fill="#f0f6fc">3%  →  31%</text>
+  <text x="472" y="243" class="m tiny" fill="#91a8be">доля игры в словах бота</text>
+  <text x="875" y="243" text-anchor="end" class="m tiny" fill="#72cfa0">доля эфира бота: 19% в обоих</text>
+  <text x="875" y="258" text-anchor="end" class="m tiny" fill="#60768b">по журналам проекта</text>
+</svg>

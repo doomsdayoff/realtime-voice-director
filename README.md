@@ -2,6 +2,10 @@
 
 [![tests](https://github.com/doomsdayoff/realtime-voice-director/actions/workflows/tests.yml/badge.svg)](https://github.com/doomsdayoff/realtime-voice-director/actions/workflows/tests.yml)
 
+<p align="center">
+<img src="assets/live.svg" alt="Когда голосовому ИИ говорить: событие в игре, речь стримера, request, генерация, commit перед первым звуком; живые эфиры 09.09 → 12.09: доля игры в словах бота 3% → 31%" width="100%" />
+</p>
+
 У меня на стриме работает голосовой ИИ-соведущий. Он комментирует игру, зачитывает
 донаты и чат, разговаривает с пати. Это несколько независимых LLM-слоёв на одну
 «глотку», и самый трудный вопрос в таком продукте – не «что сказать», а **когда
